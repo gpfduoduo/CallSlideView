@@ -2,9 +2,9 @@
 滑动实现接听和挂断电话的View
 
 ## 效果图
-1、向左滑动接听，向右滑动挂断
-2、向两边滑动时，颜色渐变
-3、颜色和字体可以在xml中完全自定义    
+1、向左滑动接听，向右滑动挂断   
+2、向两边滑动时，颜色渐变   
+3、颜色和字体可以在xml中完全自定义      
 
 ![image](https://github.com/gpfduoduo/CallSlideView/blob/master/result/demo.gif "效果图")
 
