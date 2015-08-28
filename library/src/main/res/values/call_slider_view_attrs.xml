@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CallSliderView">
+        <attr name="CallSliderView_backgroundColor" format="color" />
+        <attr name="CallSliderView_progressBackgroundColor" format="color" />
+        <attr name="CallSliderView_textSize" format="dimension" />
+        <attr name="CallSliderView_text" format="string" />
+        <attr name="CallSliderView_Left_Text" format="string"/>
+        <attr name="CallSliderView_Left_BackgroundColor" format="color"/>
+        <attr name="CallSliderView_Right_BackgroundColor" format="color"/>
+        <attr name="CallSliderView_Right_Text" format="string"/>
+    </declare-styleable>
+</resources>

@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.guo.duoduo.library.CallSliderView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +14,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        CallSliderView callView = (CallSliderView) findViewById(R.id.slider_view);
+        callView.setSliderEndListener(new CallSliderView.SliderListener() {
+            @Override
+            public void onSliderEnd() {
+                Toast.makeText(MainActivity.this, "挂断", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+
+            @Override
+            public void onSliderListen() {
+                Toast.makeText(MainActivity.this, "接听", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
     }
 
     @Override
